@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../assets/mahmoud.jpeg";
+import img1 from "../../assets/mahmoud.jpeg";
 import Navbar from "./Navbar";
 import Avatar from "./Avatar";
 

@@ -25,9 +25,7 @@ const About = () => {
       id="about"
       className="w-full bg-transparent p-8 flex flex-col items-center justify-center space-y-8 relative"
     >
-      <h1 className="text-4xl font-bold text-white self-start md:self-center md:text-5xl">
-        About
-      </h1>
+      <h1 className="text-4xl font-bold text-white text-center mb-8">About</h1>
       <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-x-16 md:space-y-0 mt-8">
         <img
           src={ImgMahmoud}
