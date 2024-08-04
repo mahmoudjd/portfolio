@@ -25,7 +25,12 @@ const Projects = () => {
             <p className="text-gray-400 mt-2">
               Technologies: {project.technologies.join(", ")}
             </p>
-            <a href={project.link} className="text-green-500 mt-4 inline-block">
+            <a
+              href={project.link}
+              target="_blank"
+              className="text-green-500 mt-4 inline-block"
+              rel="noreferrer"
+            >
               View Project
             </a>
           </div>
