@@ -51,7 +51,7 @@ export const projects = [
       "bcrypt",
       "TypeScript",
     ],
-    imageUrl: "./assets/auth-app.png",
+    imageUrl: "./assets/auth.png",
     link: "https://github.com/mahmoudjd/Authenticationapp",
   },
   {
