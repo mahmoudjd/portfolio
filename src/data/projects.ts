@@ -60,6 +60,6 @@ export const projects = [
       "A personal portfolio website showcasing my projects, skills, and experiences. Built with React and TypeScript for a robust and type-safe front-end, and styled using Tailwind CSS for a modern and responsive design. The site serves as a central hub for potential employers and collaborators to view my work and get in touch with me.",
     technologies: ["React", "TypeScript", "Tailwindcss"],
     imageUrl: "./assets/portfolio.png",
-    link: "https://github.com/mahmoudjd/Authenticationapp",
+    link: "https://github.com/mahmoudjd/portfolio",
   },
 ];
