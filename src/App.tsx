@@ -5,16 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-
-const Footer = () => {
-  return (
-    <footer className="w-full bottom-0  border-t-2 border-green-500 bg-gray-800">
-      <p className="text-white text-center p-2">
-        &copy; Mahmoud Al Jarad {new Date().getFullYear()}
-      </p>
-    </footer>
-  );
-};
+import Footer from "./components/Footer";
 
 function App() {
   return (
