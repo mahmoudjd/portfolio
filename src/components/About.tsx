@@ -21,10 +21,7 @@ const calculateAge = (birthDateString: string): number => {
 
 const About = () => {
   return (
-    <div
-      id="about"
-      className="w-full bg-transparent p-8 flex flex-col items-center justify-center space-y-8 relative"
-    >
+    <div id="about" className="w-full bg-gray-900 p-8">
       <h1 className="text-4xl font-bold text-white text-center mb-8">About</h1>
       <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-x-16 md:space-y-0 mt-8">
         <img
@@ -32,7 +29,7 @@ const About = () => {
           alt="Mahmoud Al Jarad"
           className="w-96 rounded-lg shadow-2xl"
         />
-        <div className="text-white max-w-2xl space-y-4 text-center md:text-left bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-lg">
+        <div className="text-white max-w-2xl space-y-4 text-left bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-lg">
           <p className="text-3xl font-semibold">Mahmoud Al Jarad</p>
           <p className="text-xl">
             <b>Age:</b> {calculateAge("1995-01-09")}

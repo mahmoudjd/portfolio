@@ -2,7 +2,7 @@ import NavbarLink from "./NavbarLink";
 
 const Navbar = () => {
   return (
-    <ul className="list-none flex flex-row gap-2 text-xl">
+    <ul className="list-none flex flex-row gap-2 text-xl max-md:flex-col max-md:text-lg">
       <li>
         <NavbarLink to={"/"} text={"About"} />
       </li>

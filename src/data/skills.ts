@@ -20,6 +20,7 @@ export const skills = [
       "Cheerio.js",
       "RESTful-API",
       "Git",
+      "Tailwindcss",
     ],
   },
   { category: "Operating Systems", details: ["MacOS", "Linux"] },

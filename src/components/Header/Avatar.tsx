@@ -13,7 +13,7 @@ const Avatar = ({ image, name }: Props) => {
         alt={name}
         className="w-14 h-14 rounded-full object-cover"
       />
-      <h2 className="text-2xl text-white">
+      <h2 className="text-2xl text-white max-md:text-xl">
         <NavLink to="/">{name}</NavLink>
       </h2>
     </div>
