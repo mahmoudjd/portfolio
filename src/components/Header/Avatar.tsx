@@ -5,19 +5,15 @@ interface Props {
   image: string;
 }
 
-const Avatar = ({ image, name }: Props) => {
-  return (
-    <div className="flex flex-row p-4 gap-2 items-center justify-center">
-      <img
-        src={image}
-        alt={name}
-        className="w-14 h-14 rounded-full object-cover"
-      />
-      <h2 className="text-2xl text-white max-md:text-xl">
-        <NavLink to="/">{name}</NavLink>
-      </h2>
-    </div>
-  );
+const Avatar = ({image, name}: Props) => {
+    return (
+        <div className="flex items-center space-x-4">
+            <img src={image} alt={name} className="w-14 h-14 rounded-full object-cover"/>
+            <NavLink to="/" className="text-white text-2xl font-semibold hover:text-green-400">
+                {name}
+            </NavLink>
+        </div>
+    );
 };
 
 export default Avatar;
