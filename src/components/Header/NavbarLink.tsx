@@ -1,21 +1,15 @@
-import { NavLink } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
-interface Props {
-  to: string;
-  text: string;
-}
-
-const NavbarLink = ({ to, text }: Props) => {
-  return (
-    <NavLink
-      to={to}
-      className={({ isActive }) =>
-        isActive ? "text-green-500" : "text-white hover:text-green-500"
-      }
-    >
-      {text}
-    </NavLink>
-  );
+const NavbarLink = ({ to, text }: {to: string, text:string}) => {
+    return (
+        <Link
+            to={to}
+            className="block text-white hover:text-green-400 transition-colors duration-200"
+        >
+            {text}
+        </Link>
+    );
 };
 
 export default NavbarLink;
