@@ -1,13 +1,11 @@
 import React from "react";
 
 const Footer = () => {
-  return (
-    <footer className="w-full bottom-0  border-t-2 border-green-500 bg-gray-800">
-      <p className="text-white text-center p-2">
-        &copy; Mahmoud Al Jarad {new Date().getFullYear()}
-      </p>
-    </footer>
-  );
+    return (
+        <footer className="w-full border-t border-green-500 bg-gray-800 text-center py-4">
+            <p className="text-gray-300">&copy; Mahmoud Al Jarad {new Date().getFullYear()}</p>
+        </footer>
+    );
 };
 
 export default Footer;
