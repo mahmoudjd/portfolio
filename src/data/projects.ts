@@ -1,5 +1,24 @@
 export const projects = [
   {
+    "title": "Library Management System",
+    "description":
+        "A modern system for managing a library with authentication. Users can borrow, return, and search for books. Administrators can add and manage new books.",
+    "technologies": [
+      "Next.js",
+      "next-auth",
+      "Tailwind CSS",
+      "Node.js",
+      "Zod.js",
+      "Radix UI",
+      "Axios",
+      "TanStack/react-query",
+      "MongoDB",
+      "TypeScript"
+    ],
+    "imageUrl": "./assets/lib-mgmt.png",
+    "link": "https://github.com/mahmoudjd/libs-management"
+  },
+  {
     title: "MJD-FootballScout",
     description:
       "A comprehensive platform for scouting football players, leveraging Cheerio.js for efficient data extraction from web sources. The backend is built with Node.js and Express.js, while the frontend is developed using React and React Native for seamless web and mobile experiences. Data is managed with MongoDB and the entire application is type-safe with TypeScript.",
