@@ -1,12 +1,11 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import InfoPage from "./pages/InfoPage"
+import ProjectsPage from "./pages/ProjectsPage";
+import SkillsPage from "./pages/SkillsPage";
 
 function App() {
     return (
@@ -14,11 +13,10 @@ function App() {
             <Router>
                 <Header/>
                 <main className="flex-grow">
-                    <Hero/>
                     <Routes>
-                        <Route path="/" element={<About/>}/>
-                        <Route path="/projects" element={<Projects/>}/>
-                        <Route path="/skills" element={<Skills/>}/>
+                        <Route path="/" element={<InfoPage />}/>
+                        <Route path="/projects" element={<ProjectsPage />}/>
+                        <Route path="/skills" element={<SkillsPage />}/>
                         <Route path="/contact" element={<Contact/>}/>
                     </Routes>
                 </main>

@@ -1,27 +1,25 @@
 import React from "react";
 import {projects} from "../data/projects";
 import {FaGithub} from "react-icons/fa";
+import {List} from "./list";
+import {Card} from "./card";
+import {Badge} from "./badge";
+import {Container} from "./container";
 
 const Projects = () => {
     return (
-        <div
-            id="projects"
-            className="w-full bg-gradient-to-b from-gray-900 to-black py-16 px-8"
-        >
+        <Container>
             <h1 className="text-4xl font-extrabold text-white text-center mb-16">
                 My Projects
             </h1>
 
-            <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <List grid>
                 {projects.map((project, index) => (
-                    <div
-                        key={index}
-                        className="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl hover:shadow-green-500/40 transition-transform duration-300 hover:-translate-y-1"
-                    >
+                    <Card key={index}>
                         <img
                             src={project.imageUrl}
                             alt={project.title}
-                            className="w-full h-60 object-contain"
+                            className="w-full h-64 object-contain rounded-lg"
                         />
 
                         <div className="flex flex-col justify-between p-4">
@@ -35,12 +33,7 @@ const Projects = () => {
 
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.technologies.map((tech, i) => (
-                                        <span
-                                            key={i}
-                                            className="text-xs bg-gray-700 text-green-300 px-3 py-1 rounded-full"
-                                        >
-                                            {tech}
-                                        </span>
+                                        <Badge key={i} variant="secondary" title={tech}/>
                                     ))}
                                 </div>
                             </div>
@@ -56,10 +49,10 @@ const Projects = () => {
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </Card>
                 ))}
-            </div>
-        </div>
+            </List>
+        </Container>
     );
 };
 
