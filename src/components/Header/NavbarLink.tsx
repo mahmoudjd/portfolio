@@ -1,11 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
-const NavbarLink = ({ to, text }: {to: string, text:string}) => {
+interface NavbarLinkProps {
+    to: string
+    text: string
+    handleClick?: () => void
+}
+
+const NavbarLink = ({to, text, handleClick}: NavbarLinkProps) => {
     return (
         <Link
             to={to}
             className="block text-white hover:text-green-400 transition-colors duration-200"
+            onClick={handleClick}
         >
             {text}
         </Link>
