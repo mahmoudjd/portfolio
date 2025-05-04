@@ -31,11 +31,11 @@ const Projects = () => {
                                     {project.description}
                                 </p>
 
-                                <div className="flex flex-wrap gap-2 mb-4">
+                                <List wrap>
                                     {project.technologies.map((tech, i) => (
                                         <Badge key={i} variant="secondary" title={tech}/>
                                     ))}
-                                </div>
+                                </List>
                             </div>
                             <div>
                                 <a

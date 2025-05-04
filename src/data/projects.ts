@@ -6,8 +6,9 @@ export const projects = [
     "technologies": [
       "Next.js",
       "next-auth",
-      "Tailwind CSS",
+      "Tailwindcss",
       "Node.js",
+      "Express.js",
       "Zod.js",
       "Radix UI",
       "Axios",
