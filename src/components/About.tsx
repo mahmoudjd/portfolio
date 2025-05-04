@@ -1,44 +1,105 @@
 import React from "react";
 import ImgMahmoud from "../assets/mahmoud.jpeg";
 import { calculateAge } from "../utils/calculateAge";
+import {
+    FaUniversity,
+    FaBirthdayCake,
+    FaCode,
+    FaBriefcase,
+    FaGlobeEurope,
+    FaLanguage,
+} from "react-icons/fa";
+import { Badge } from "./badge";
+import { Container } from "./container";
 
 const About = () => {
-  const age = calculateAge("1995-01-09");
+    const age = calculateAge("1995-01-09");
 
-  return (
-      <section id="about" className="bg-gray-950 py-20 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
+    const infoItems = [
+        {
+            icon: <FaBirthdayCake className="text-pink-400" aria-hidden />,
+            label: "Age",
+            content: <span>{age}</span>,
+        },
+        {
+            icon: <FaBriefcase className="text-yellow-400" aria-hidden />,
+            label: "Position",
+            content: (
+                <span>
+          Fullstack Developer at LivEye GmbH
+          <br />
+          <span className="text-sm text-gray-400 dark:text-gray-500">
+            (since October 2024)
+          </span>
+        </span>
+            ),
+        },
+        {
+            icon: <FaCode className="text-cyan-400" aria-hidden />,
+            label: "Degree",
+            content: <span>B.Sc. in Computer Science</span>,
+        },
+        {
+            icon: <FaUniversity className="text-purple-400" aria-hidden />,
+            label: "University",
+            content: <span>Trier University of Applied Sciences</span>,
+        },
+        {
+            icon: <FaGlobeEurope className="text-blue-400" aria-hidden />,
+            label: "Nationalities",
+            content: (
+                <div className="flex flex-wrap gap-2">
+                    <Badge title="Syrian" variant="info" />
+                    <Badge title="German" variant="info" />
+                </div>
+            ),
+        },
+        {
+            icon: <FaLanguage className="text-green-400" aria-hidden />,
+            label: "Languages",
+            content: (
+                <div className="flex flex-wrap gap-2">
+                    <Badge title="German" variant="info" />
+                    <Badge title="English" variant="info" />
+                    <Badge title="Arabic" variant="info" />
+                </div>
+            ),
+        },
+    ];
 
-          {/* Profile Image */}
-          <div className="flex-shrink-0">
-            <img
-                src={ImgMahmoud}
-                alt="Mahmoud Al Jarad"
-                className="w-72 md:w-80 rounded-xl border-4 border-indigo-500 shadow-lg object-cover"
-            />
-          </div>
-
-          {/* Information Card */}
-          <div className="bg-gray-900 w-full p-8 rounded-xl shadow-2xl text-white space-y-6">
-            <h2 className="text-4xl font-bold text-indigo-400 tracking-tight">
-              Mahmoud Al Jarad
-            </h2>
-
-            <div className="space-y-3 text-lg leading-relaxed">
-              <p><span className="font-semibold">Age:</span> {age}</p>
-              <p><span className="font-semibold">Position:</span> Fullstack Developer at LivEye GmbH <br /><span className="text-sm text-gray-400">(since October 2024)</span></p>
-              <p><span className="font-semibold">Degree:</span> B.Sc. in Computer Science</p>
-              <p><span className="font-semibold">University:</span> Trier University of Applied Sciences</p>
-              <p className="font-semibold">Nationalities:</p>
-              <div className="flex gap-3 mt-2">
-                <span className="bg-green-700 text-sm px-3 py-1 rounded-full">Syrian</span>
-                <span className="bg-blue-600 text-sm px-3 py-1 rounded-full">German</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-  );
+    return (
+        <Container className="py-20 px-4 md:px-8">
+            <section className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
+                <div className="bg-gray-100 dark:bg-gray-900 p-8 rounded-2xl shadow-lg w-full md:w-1/2">
+                    <h2 className="text-4xl font-extrabold text-gray-800 dark:text-green-400 mb-6">
+                        Mahmoud Al Jarad
+                    </h2>
+                    <ul className="space-y-5">
+                        {infoItems.map(({ icon, label, content }) => (
+                            <li key={label} className="flex items-start space-x-4">
+                                <div className="mt-1">{icon}</div>
+                                <div>
+                                    <p className="font-medium text-gray-700 dark:text-gray-200">
+                                        {label}:
+                                    </p>
+                                    <div className="mt-1 text-gray-600 dark:text-gray-400">
+                                        {content}
+                                    </div>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-xl">
+                    <img
+                        src={ImgMahmoud}
+                        alt="Portrait of Mahmoud Al Jarad"
+                        className="object-cover w-full h-full"
+                    />
+                </div>
+            </section>
+        </Container>
+    );
 };
 
 export default About;
