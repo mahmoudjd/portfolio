@@ -2,6 +2,7 @@ import React from "react";
 import {skills} from "../data/skills";
 import {List} from "./list";
 import {Container} from "./container";
+import {Badge} from "./badge";
 
 interface Skill {
     category: string;
@@ -21,7 +22,11 @@ const Skills: React.FC = () => {
                         <h3 className="text-xl font-semibold text-green-400">
                             {skill.category}
                         </h3>
-                        <p className="text-gray-300 mt-2">{skill.details.join(", ")}</p>
+                        <List wrap>
+                            {skill.details.length >= 1 && skill.details.map((detail, i) =>
+                                <Badge title={detail} variant="secondary" key={i}/>
+                            )}
+                        </List>
                     </div>
                 ))}
             </List>
