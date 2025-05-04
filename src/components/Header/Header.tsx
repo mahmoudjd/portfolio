@@ -3,13 +3,14 @@ import {HiMenu, HiX} from "react-icons/hi";
 import Avatar from "./Avatar";
 import NavbarLink from "./NavbarLink";
 import img1 from "../../assets/mahmoud.jpeg";
+import {Container} from "../container";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="w-full bg-gray-800 text-white sticky top-0 z-50 border-b-2 border-green-500 shadow-lg">
-            <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <header className="w-full  text-white sticky top-0 z-50 border-b-2 border-green-700 shadow-lg">
+            <Container className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
                 <Avatar image={img1} name="Mahmoud Al Jarad"/>
 
                 {/* Desktop Navigation */}
@@ -17,7 +18,7 @@ const Header = () => {
                     <NavbarLink to="/" text="About"/>
                     <NavbarLink to="/projects" text="Projects"/>
                     <NavbarLink to="/skills" text="Skills"/>
-                    <NavbarLink to="/contact" text="Contact"/>
+                   {/* <NavbarLink to="/contact" text="Contact"/>*/}
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -28,7 +29,7 @@ const Header = () => {
                 >
                     {isMenuOpen ? <HiX/> : <HiMenu/>}
                 </button>
-            </div>
+            </Container>
 
             {/* Mobile Dropdown */}
             {isMenuOpen && (
@@ -36,7 +37,7 @@ const Header = () => {
                     <NavbarLink to="/" text="About" handleClick={() => setIsMenuOpen(false)}/>
                     <NavbarLink to="/projects" text="Projects" handleClick={() => setIsMenuOpen(false)}/>
                     <NavbarLink to="/skills" text="Skills" handleClick={() => setIsMenuOpen(false)}/>
-                    <NavbarLink to="/contact" text="Contact" handleClick={() => setIsMenuOpen(false)}/>
+                    {/*<NavbarLink to="/contact" text="Contact" handleClick={() => setIsMenuOpen(false)}/>*/}
                 </div>
             )}
         </header>
