@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <header className="w-full  text-white sticky top-0 z-50 border-b-2 border-green-700 shadow-lg">
-            <Container className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <Container className="w-full mx-auto px-4 py-3 flex items-center justify-between">
                 <Avatar image={img1} name="Mahmoud Al Jarad"/>
 
                 {/* Desktop Navigation */}
