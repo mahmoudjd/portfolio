@@ -22,8 +22,16 @@ export function List({
             : "flex flex-col space-y-6";
 
     return (
-        <div className={`${baseClass} ${className}`}>
+        <ul className={`${baseClass} ${className}`}>
             {children}
-        </div>
+        </ul>
     );
+}
+
+export const ListItem = ({children, className}: ListProps) => {
+    return (
+        <li className={"flex w-full " + className}>
+            {children}
+        </li>
+    )
 }
