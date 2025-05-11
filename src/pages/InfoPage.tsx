@@ -1,7 +1,12 @@
 import Hero from "../components/hero";
 import About from "../components/About";
+import {useEffect} from "react";
 
 const InfoPage = () => {
+    useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: "auto" });
+    })
+
     return (
         <>
             <Hero title="Welcome to My Portfolio!"

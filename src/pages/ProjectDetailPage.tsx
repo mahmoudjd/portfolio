@@ -5,12 +5,18 @@ import {Badge} from "../components/ui/badge";
 import {List} from "../components/ui/list";
 import {FaGithub} from "react-icons/fa";
 import {projects} from "../data/projects";
+import { useEffect } from "react";
 import {ImageModal} from "../components/ImageModal";
 
 const ProjectDetailPage = () => {
     const {projectId} = useParams();
     const project = projects.find((p) => p.id === projectId);
     const [modalIndex, setModalIndex] = useState<number | null>(null);
+
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+    }, []);
 
     if (!project) {
         return (

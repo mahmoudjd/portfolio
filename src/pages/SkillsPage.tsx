@@ -1,7 +1,13 @@
 import Hero from "../components/hero";
 import Skills from "../components/Skills";
+import {useEffect} from "react";
 
 const SkillsPage = () => {
+
+    useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: "auto" });
+    })
+
     return (
         <>
             <Hero
