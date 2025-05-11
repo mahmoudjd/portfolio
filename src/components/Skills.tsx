@@ -1,8 +1,8 @@
 import React from "react";
 import {skills} from "../data/skills";
-import {List, ListItem} from "./list";
-import {Container} from "./container";
-import {Badge} from "./badge";
+import {List, ListItem} from "./ui/list";
+import {Container} from "./ui/container";
+import {Badge} from "./ui/badge";
 
 interface Skill {
     category: string;

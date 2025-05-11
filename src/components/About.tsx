@@ -9,8 +9,9 @@ import {
     FaGlobeEurope,
     FaLanguage,
 } from "react-icons/fa";
-import { Badge } from "./badge";
-import { Container } from "./container";
+import { Badge } from "./ui/badge";
+import { Container } from "./ui/container";
+import { Card } from "./ui/card";
 
 const About = () => {
     const age = calculateAge("1995-01-09");

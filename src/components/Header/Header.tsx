@@ -3,7 +3,7 @@ import {HiMenu, HiX} from "react-icons/hi";
 import Avatar from "./Avatar";
 import NavbarLink from "./NavbarLink";
 import img1 from "../../assets/mahmoud.jpeg";
-import {Container} from "../container";
+import {Container} from "../ui/container";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +18,6 @@ const Header = () => {
                     <NavbarLink to="/" text="About"/>
                     <NavbarLink to="/projects" text="Projects"/>
                     <NavbarLink to="/skills" text="Skills"/>
-                   {/* <NavbarLink to="/contact" text="Contact"/>*/}
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -33,11 +32,10 @@ const Header = () => {
 
             {/* Mobile Dropdown */}
             {isMenuOpen && (
-                <div className="md:hidden bg-gray-700 px-6 py-4 space-y-3">
+                <div className="md:hidden bg-gray-900 px-6 py-4 space-y-3">
                     <NavbarLink to="/" text="About" handleClick={() => setIsMenuOpen(false)}/>
                     <NavbarLink to="/projects" text="Projects" handleClick={() => setIsMenuOpen(false)}/>
                     <NavbarLink to="/skills" text="Skills" handleClick={() => setIsMenuOpen(false)}/>
-                    {/*<NavbarLink to="/contact" text="Contact" handleClick={() => setIsMenuOpen(false)}/>*/}
                 </div>
             )}
         </header>
