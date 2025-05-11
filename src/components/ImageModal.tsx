@@ -60,7 +60,7 @@ export const ImageModal: React.FC<ImageModalProps> = ({
                     <img
                         key={currentIndex}
                         src={images[currentIndex]}
-                        alt={`Image ${currentIndex + 1}`}
+                        alt={`project ${currentIndex + 1}`}
                         onLoad={() => setLoaded(true)}
                         className={`max-h-[80vh] w-auto object-contain mx-auto transition-opacity duration-500 ${
                             loaded ? "opacity-100" : "opacity-0"
