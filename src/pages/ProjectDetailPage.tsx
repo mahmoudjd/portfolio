@@ -87,7 +87,7 @@ const ProjectDetailPage = () => {
 
             {hasGallery && (
                 <div>
-                    <h2 className="text-xl text-white font-semibold mb-4">Weitere Bilder:</h2>
+                    <h2 className="text-xl text-white font-semibold mb-4">More images:</h2>
                     <List grid>
                         {images.map((img, index) => (
                             <img
