@@ -21,7 +21,7 @@ export const projects = [
         ],
         "imageUrl": "/assets/lib-mgmt.png",
         "link": "https://github.com/mahmoudjd/libs-management",
-        images: ["/assets/libs-1.png", "/assets/libs-2.png", "/assets/libs-3.png", "/assets/libs-4.png", "/assets/libs-5.png", "/assets/libs-6.png", "/assets/libs-7.png", "/assets/libs-8.png"]
+        images: ["/assets/libs-1.png", "/assets/libs-2.png", "/assets/libs-3.png", "/assets/libs-4.png", "/assets/libs-6.png", "/assets/libs-7.png", "/assets/libs-8.png"]
     },
     {
         id: "2",
