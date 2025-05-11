@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import InfoPage from "./pages/InfoPage"
 import ProjectsPage from "./pages/ProjectsPage";
+import ProjectDetailPage from "./pages/ProjectDetailPage"
 import SkillsPage from "./pages/SkillsPage";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<InfoPage />}/>
                         <Route path="/projects" element={<ProjectsPage />}/>
+                        <Route path="/projects/:projectId" element={<ProjectDetailPage />}/>
                         <Route path="/skills" element={<SkillsPage />}/>
                         {/*<Route path="/contact" element={<Contact/>}/>*/}
                     </Routes>
