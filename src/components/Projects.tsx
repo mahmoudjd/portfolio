@@ -4,7 +4,6 @@ import {List} from "./ui/list";
 import {Card} from "./ui/card";
 import {Container} from "./ui/container";
 import {Link} from "react-router-dom"
-import {FaGithub} from "react-icons/fa";
 
 const Projects = () => {
     return (
