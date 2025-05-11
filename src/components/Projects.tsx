@@ -4,10 +4,6 @@ import {List} from "./ui/list";
 import {Card} from "./ui/card";
 import {Container} from "./ui/container";
 import {FaGithub} from "react-icons/fa";
-import {List} from "./list";
-import {Card} from "./card";
-import {Badge} from "./badge";
-import {Container} from "./container";
 
 const Projects = () => {
     return (
