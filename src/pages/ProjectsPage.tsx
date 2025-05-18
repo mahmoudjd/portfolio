@@ -11,7 +11,7 @@ const ProjectsPage = () => {
         <>
             <Hero
                 title="Projects"
-                subtitle="A selection of projects I've worked on — from client applications to internal tools, each showcasing my skills in frontend, backend, and DevOps."
+                subtitle="A selection of projects I've worked on, each showcasing my skills in frontend, backend, and DevOps."
             />
 
             <Projects/>

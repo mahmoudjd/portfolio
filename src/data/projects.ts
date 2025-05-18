@@ -27,7 +27,7 @@ export const projects = [
         id: "2",
         title: "MJD-FootballScout",
         description:
-            "A comprehensive platform for scouting football players, leveraging Cheerio.js for efficient data extraction from web sources. The backend is built with Node.js and Express.js, while the frontend is developed using React and React Native for seamless web and mobile experiences. Data is managed with MongoDB and the entire application is type-safe with TypeScript.",
+            "A full-stack scouting platform developed as my thesis project, designed to evaluate and manage football talent. The system includes a Node.js/Express backend, a React web app, and a React Native mobile app — all written in TypeScript for strong type safety. Cheerio.js enables efficient web scraping, and MongoDB handles flexible data storage.",
         technologies: [
             "React",
             "React Native",
